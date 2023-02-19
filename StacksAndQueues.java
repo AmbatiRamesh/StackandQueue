@@ -7,6 +7,9 @@ public class StacksAndQueues {
     public void display() {
         linkedlists.display();
     }
+    public void pop() {
+        linkedlists.popFirst();
+    }
     public static void main(String[] args) {
         System.out.println("welcome to stack program");
         StacksAndQueues stack = new StacksAndQueues();
@@ -14,6 +17,11 @@ public class StacksAndQueues {
         stack.push(30);
         stack.push(70);
         stack.display();
+        stack.pop();
+        stack.display();
+        stack.pop();
+        stack.display();
+        stack.pop();
+        stack.display();
     }
 }
-
