@@ -2,7 +2,7 @@ package com.stackandqueue;
 
 public class LinkedLists {
     Node head;
-    class Node {
+       class Node {
         Object data;
         Node ref; // reference to next object in the sequence
         Node(Object data) {
