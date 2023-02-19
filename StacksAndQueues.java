@@ -1,27 +1,19 @@
 package com.stackandqueue;
 public class StacksAndQueues {
     LinkedLists linkedlists = new LinkedLists();
-    public void push(Object data) {
-        linkedlists.peakLast(data);
+    public void enQueue(Object data) {
+        linkedlists.addFirst(data);
     }
     public void display() {
         linkedlists.display();
     }
-    public void pop() {
-        linkedlists.popFirst();
-    }
     public static void main(String[] args) {
-        System.out.println("welcome to stack program");
-        StacksAndQueues stack = new StacksAndQueues();
-        stack.push(56);
-        stack.push(30);
-        stack.push(70);
-        stack.display();
-        stack.pop();
-        stack.display();
-        stack.pop();
-        stack.display();
-        stack.pop();
-        stack.display();
+        System.out.println("welcome to Queue program");
+        StacksAndQueues queue = new StacksAndQueues();
+        queue.enQueue(70);
+        queue.enQueue(30);
+        queue.enQueue(56);
+        queue.display();
     }
+
 }
